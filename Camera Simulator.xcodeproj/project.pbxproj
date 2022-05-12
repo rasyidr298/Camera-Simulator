@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0112BB40282B85D600BEFA91 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BB3F282B85D600BEFA91 /* CameraViewController.swift */; };
+		0112BB42282B85FA00BEFA91 /* LearningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BB41282B85FA00BEFA91 /* LearningViewController.swift */; };
+		0112BB44282CDCD900BEFA91 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BB43282CDCD900BEFA91 /* OnBoardingViewController.swift */; };
 		017EBFD3282AA8E30043476F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBFD2282AA8E30043476F /* AppDelegate.swift */; };
 		017EBFD5282AA8E30043476F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBFD4282AA8E30043476F /* SceneDelegate.swift */; };
-		017EBFD7282AA8E30043476F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBFD6282AA8E30043476F /* ViewController.swift */; };
 		017EBFDA282AA8E30043476F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFD8282AA8E30043476F /* Main.storyboard */; };
 		017EBFDC282AA8E50043476F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFDB282AA8E50043476F /* Assets.xcassets */; };
 		017EBFDF282AA8E50043476F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFDD282AA8E50043476F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0112BB3F282B85D600BEFA91 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		0112BB41282B85FA00BEFA91 /* LearningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewController.swift; sourceTree = "<group>"; };
+		0112BB43282CDCD900BEFA91 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		017EBFCF282AA8E30043476F /* Camera Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camera Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		017EBFD2282AA8E30043476F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		017EBFD4282AA8E30043476F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		017EBFD6282AA8E30043476F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		017EBFD9282AA8E30043476F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		017EBFDB282AA8E50043476F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		017EBFDE282AA8E50043476F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0112BB3C282B855900BEFA91 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0112BB3F282B85D600BEFA91 /* CameraViewController.swift */,
+				0112BB43282CDCD900BEFA91 /* OnBoardingViewController.swift */,
+				0112BB41282B85FA00BEFA91 /* LearningViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0112BB45282CFDBA00BEFA91 /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				017EBFDB282AA8E50043476F /* Assets.xcassets */,
+				017EBFE0282AA8E50043476F /* Info.plist */,
+			);
+			path = SuportingFiles;
+			sourceTree = "<group>";
+		};
+		0112BB46282CFDD200BEFA91 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				017EBFD4282AA8E30043476F /* SceneDelegate.swift */,
+				017EBFD2282AA8E30043476F /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		017EBFC6282AA8E30043476F = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +88,11 @@
 		017EBFD1282AA8E30043476F /* Camera Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				017EBFD2282AA8E30043476F /* AppDelegate.swift */,
-				017EBFD4282AA8E30043476F /* SceneDelegate.swift */,
-				017EBFD6282AA8E30043476F /* ViewController.swift */,
+				0112BB46282CFDD200BEFA91 /* App */,
+				0112BB45282CFDBA00BEFA91 /* SuportingFiles */,
+				0112BB3C282B855900BEFA91 /* ViewController */,
 				017EBFD8282AA8E30043476F /* Main.storyboard */,
-				017EBFDB282AA8E50043476F /* Assets.xcassets */,
 				017EBFDD282AA8E50043476F /* LaunchScreen.storyboard */,
-				017EBFE0282AA8E50043476F /* Info.plist */,
 			);
 			path = "Camera Simulator";
 			sourceTree = "<group>";
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				017EBFD7282AA8E30043476F /* ViewController.swift in Sources */,
+				0112BB40282B85D600BEFA91 /* CameraViewController.swift in Sources */,
+				0112BB42282B85FA00BEFA91 /* LearningViewController.swift in Sources */,
 				017EBFD3282AA8E30043476F /* AppDelegate.swift in Sources */,
 				017EBFD5282AA8E30043476F /* SceneDelegate.swift in Sources */,
+				0112BB44282CDCD900BEFA91 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Camera Simulator/Info.plist";
+				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Camera Simulator/Info.plist";
+				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
