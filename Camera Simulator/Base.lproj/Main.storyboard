@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zxs-UT-PdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1839.1304347826087" y="-685.04464285714278"/>
+            <point key="canvasLocation" x="-1804" y="-688"/>
         </scene>
         <!--Onboarding Page View Controller-->
         <scene sceneID="wrg-gv-AcC">
@@ -68,7 +68,7 @@
                 <pageViewController storyboardIdentifier="OnboardingPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yn9-V9-jKa" customClass="OnboardingPageViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hc-ab-aee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-997" y="-685"/>
+            <point key="canvasLocation" x="-962" y="-688"/>
         </scene>
         <!--Onboarding Content View Controller-->
         <scene sceneID="Zjt-Rz-n9D">
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBa-G1-JVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-145" y="-684"/>
+            <point key="canvasLocation" x="-112" y="-688"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -199,7 +199,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctN-x5-OiY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.10144927536237" y="65.625"/>
+            <point key="canvasLocation" x="-894" y="834"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Thz-CF-UR6">
@@ -215,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sga-bJ-5Ox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778.2608695652175" y="65.625"/>
+            <point key="canvasLocation" x="-1804" y="1627"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sYC-Mm-Bcu">
@@ -233,7 +233,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6f-Vu-hj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86.956521739130437" y="65.625"/>
+            <point key="canvasLocation" x="-1804" y="834"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9dP-zo-L87">

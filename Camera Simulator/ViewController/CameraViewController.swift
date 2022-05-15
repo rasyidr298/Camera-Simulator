@@ -10,13 +10,13 @@ import UIKit
 class CameraViewController: UIViewController {
     
     @IBOutlet weak var imgCamera: UIImageView!
+    
     private var listImage = [UIImage(named: "bg_test1"), UIImage(named: "bg_test2")]
     private var indexImage = 0
+    var transition = CATransition()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        imgCamera.image = listImage[indexImage]
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -29,49 +29,45 @@ class CameraViewController: UIViewController {
             present(onBoardingVC, animated: true)
         }
     }
+}
+
+extension CameraViewController {
     
-    @IBAction func btnNext(_ sender: Any) {
-        if indexImage == listImage.count-1 {
-            indexImage = 0
-        }else {
-            indexImage += 1
+    func animateImageView(type: String) {
+        
+        switch type {
+            case "next" :
+                transition.type = CATransitionType.push
+                transition.subtype = CATransitionSubtype.fromRight
+            case "previous" :
+                transition.type = CATransitionType.push
+                transition.subtype = CATransitionSubtype.fromLeft
+            default:
+                    transition.type = CATransitionType.push
+                    transition.subtype = CATransitionSubtype.fromRight
         }
         
-        self.imgCamera.image = self.listImage[self.indexImage]
-        
-        //animate right
-//        UIView.animate(
-//            withDuration: 0.5,
-//            delay: 0.0,
-//            options:.transitionFlipFromRight,
-//            animations: {
-//                self.imgCamera.image = self.listImage[self.indexImage]
-//                self.imgCamera?.frame.origin.x = 600
-//        })
+        imgCamera.layer.add(transition, forKey: kCATransition)
+        if listImage.count != 0 {
+            imgCamera.image = listImage[indexImage]
+        }
+        CATransaction.commit()
+        indexImage = indexImage < listImage.count - 1 ? indexImage + 1 : 0
+    }
+}
+
+extension CameraViewController {
+    
+    @IBAction func btnNext(_ sender: Any) {
+        animateImageView(type: "next")
     }
     
     @IBAction func btnPrevious(_ sender: Any) {
-        if indexImage == 0 {
-            indexImage = listImage.count-1
-        }else {
-            indexImage -= 1
-        }
-        
-        self.imgCamera.image = self.listImage[self.indexImage]
-        
-        //animate left
-//        UIView.animate(
-//            withDuration: 0.5,
-//            delay: 0.0,
-//            options:.transitionFlipFromLeft,
-//            animations: {
-//                self.imgCamera?.frame.origin.x = -600
-//        })
+        animateImageView(type: "previous")
     }
     
     @IBAction func btnLearning(_ sender: Any) {
             let destinationVC = UIStoryboard(name: storyBoardName, bundle: nil).instantiateViewController(withIdentifier: learningVcId) as! LearningViewController
             navigationController?.pushViewController(destinationVC, animated: true)
     }
-    
 }
