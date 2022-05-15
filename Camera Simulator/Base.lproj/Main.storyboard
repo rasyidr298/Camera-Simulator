@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Abt-HH-uEu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -11,7 +11,7 @@
         <!--On Boarding View Controller-->
         <scene sceneID="wrO-fl-rnR">
             <objects>
-                <viewController id="jhc-mu-7US" customClass="OnBoardingViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnBoardingViewController" id="jhc-mu-7US" customClass="OnBoardingViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wTN-1B-FZP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
         <!--Onboarding Page View Controller-->
         <scene sceneID="wrg-gv-AcC">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yn9-V9-jKa" customClass="OnboardingPageViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="OnboardingPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yn9-V9-jKa" customClass="OnboardingPageViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hc-ab-aee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-997" y="-685"/>
@@ -73,7 +73,7 @@
         <!--Onboarding Content View Controller-->
         <scene sceneID="Zjt-Rz-n9D">
             <objects>
-                <viewController storyboardIdentifier="onboardingContentVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eZA-cp-gwA" customClass="OnboardingContentViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingContentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eZA-cp-gwA" customClass="OnboardingContentViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nUd-At-OgV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,17 +117,14 @@
         <!--Camera View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CameraViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraViewController" id="BYZ-38-t0r" customClass="CameraViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57W-v5-EBg">
-                                <rect key="frame" x="20" y="361" width="100" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="2aC-7y-S46"/>
-                                    <constraint firstAttribute="width" constant="100" id="SaD-ck-sJV"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57W-v5-EBg">
+                                <rect key="frame" x="20" y="405" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="PREVIOUS">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
@@ -136,12 +133,9 @@
                                     <action selector="btnPrevious:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKk-IE-hfr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpt-52-5Wd">
-                                <rect key="frame" x="294" y="361" width="100" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="9XM-IQ-4Ph"/>
-                                    <constraint firstAttribute="width" constant="100" id="R8j-s2-wVt"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpt-52-5Wd">
+                                <rect key="frame" x="294" y="405" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="NEXT">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
@@ -150,38 +144,49 @@
                                     <action selector="btnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUa-Ri-cHW"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_test1" translatesAutoresizingMaskIntoConstraints="NO" id="TZD-zy-EkZ">
-                                <rect key="frame" x="20" y="74" width="374" height="267"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="267" id="sed-RY-EGy"/>
-                                    <constraint firstAttribute="width" constant="374" id="yLR-gx-KlQ"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_test1" translatesAutoresizingMaskIntoConstraints="NO" id="TZD-zy-EkZ">
+                                <rect key="frame" x="20" y="118" width="374" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wx4-4b-oaz">
+                                <rect key="frame" x="0.0" y="829" width="414" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="u0u-nt-lbY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Learning">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnLearning:" destination="BYZ-38-t0r" eventType="touchUpInside" id="En6-4r-AS3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TZD-zy-EkZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2dE-P4-jYr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TZD-zy-EkZ" secondAttribute="trailing" constant="20" id="Jrs-rh-pdh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fpt-52-5Wd" secondAttribute="trailing" constant="20" id="OR8-EO-PQw"/>
-                            <constraint firstItem="TZD-zy-EkZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="VuJ-f0-rmW"/>
-                            <constraint firstItem="57W-v5-EBg" firstAttribute="top" secondItem="TZD-zy-EkZ" secondAttribute="bottom" constant="20" id="Zhc-Ih-fcG"/>
-                            <constraint firstItem="fpt-52-5Wd" firstAttribute="top" secondItem="TZD-zy-EkZ" secondAttribute="bottom" constant="20" id="eey-1Z-yBj"/>
-                            <constraint firstItem="57W-v5-EBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nll-yd-HQY"/>
+                            <constraint firstItem="Wx4-4b-oaz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EvU-Za-XnU"/>
+                            <constraint firstItem="Wx4-4b-oaz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gMM-lv-qU7"/>
+                            <constraint firstAttribute="bottom" secondItem="Wx4-4b-oaz" secondAttribute="bottom" id="ktC-CK-M90"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uqA-OI-oSV"/>
                     <connections>
                         <outlet property="imgCamera" destination="TZD-zy-EkZ" id="9Sb-LH-TSH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1803" y="66"/>
+            <point key="canvasLocation" x="-894.20289855072474" y="65.625"/>
         </scene>
         <!--Learning View Controller-->
         <scene sceneID="reM-7B-jer">
             <objects>
-                <tableViewController id="qZj-xB-Z1T" customClass="LearningViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LearningViewController" id="qZj-xB-Z1T" customClass="LearningViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="FuQ-Cr-Ima">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,12 +199,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctN-x5-OiY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86.956521739130437" y="65.625"/>
+            <point key="canvasLocation" x="997.10144927536237" y="65.625"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Thz-CF-UR6">
             <objects>
-                <viewController storyboardIdentifier="learningDetail" id="5cj-kH-rF2" customClass="DetailViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="5cj-kH-rF2" customClass="DetailViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eWY-EX-GQB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sga-bJ-5Ox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868.11594202898561" y="65.625"/>
+            <point key="canvasLocation" x="1778.2608695652175" y="65.625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sYC-Mm-Bcu">
@@ -228,11 +233,35 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6f-Vu-hj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-823.1884057971015" y="65.625"/>
+            <point key="canvasLocation" x="86.956521739130437" y="65.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9dP-zo-L87">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Abt-HH-uEu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6V3-nD-UGn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AG3-A2-0IO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qj7-UE-JUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1804.3478260869567" y="65.625"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg_test1" width="1280" height="720"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

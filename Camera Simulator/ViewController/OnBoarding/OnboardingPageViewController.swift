@@ -80,8 +80,8 @@ extension OnboardingPageViewController: UIPageViewControllerDataSource, UIPageVi
             return nil
         }
         
-        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        if let pageContentViewController = storyBoard.instantiateViewController(withIdentifier: "onboardingContentVC") as? OnboardingContentViewController {
+        let storyBoard = UIStoryboard(name: storyBoardName, bundle: Bundle.main)
+        if let pageContentViewController = storyBoard.instantiateViewController(withIdentifier: onBoardContentVCId) as? OnboardingContentViewController {
             pageContentViewController.subheading = pageDescriptionText[index]
             pageContentViewController.heading = pageTitle[index]
             pageContentViewController.bgColor = backgroundColor[index]

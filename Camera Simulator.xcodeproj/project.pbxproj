@@ -21,6 +21,7 @@
 		017EBFDA282AA8E30043476F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFD8282AA8E30043476F /* Main.storyboard */; };
 		017EBFDC282AA8E50043476F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFDB282AA8E50043476F /* Assets.xcassets */; };
 		017EBFDF282AA8E50043476F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFDD282AA8E50043476F /* LaunchScreen.storyboard */; };
+		01E9FC1F28310AC40086BECD /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9FC1E28310AC40086BECD /* Constans.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		017EBFDB282AA8E50043476F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		017EBFDE282AA8E50043476F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		017EBFE0282AA8E50043476F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01E9FC1E28310AC40086BECD /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		0112BB3C282B855900BEFA91 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0116A6AA28309B34000B7652 /* Cell */,
 				0112BB3F282B85D600BEFA91 /* CameraViewController.swift */,
 				0112BB47282DAE3B00BEFA91 /* OnBoarding */,
 				0112BB41282B85FA00BEFA91 /* LearningViewController.swift */,
@@ -128,7 +131,7 @@
 		017EBFD1282AA8E30043476F /* Camera Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				0116A6AA28309B34000B7652 /* Cell */,
+				01E9FC1D28310A840086BECD /* Constans */,
 				0116A6A728309992000B7652 /* Model */,
 				0112BB46282CFDD200BEFA91 /* App */,
 				0112BB45282CFDBA00BEFA91 /* SuportingFiles */,
@@ -137,6 +140,14 @@
 				017EBFDD282AA8E50043476F /* LaunchScreen.storyboard */,
 			);
 			path = "Camera Simulator";
+			sourceTree = "<group>";
+		};
+		01E9FC1D28310A840086BECD /* Constans */ = {
+			isa = PBXGroup;
+			children = (
+				01E9FC1E28310AC40086BECD /* Constans.swift */,
+			);
+			path = Constans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				0116A6A9283099CB000B7652 /* Learning.swift in Sources */,
 				0112BB42282B85FA00BEFA91 /* LearningViewController.swift in Sources */,
 				0112BB4B282DAE9A00BEFA91 /* OnboardingContentViewController.swift in Sources */,
+				01E9FC1F28310AC40086BECD /* Constans.swift in Sources */,
 				017EBFD3282AA8E30043476F /* AppDelegate.swift in Sources */,
 				017EBFD5282AA8E30043476F /* SceneDelegate.swift in Sources */,
 				0116A6B12830CE81000B7652 /* DetailViewController.swift in Sources */,

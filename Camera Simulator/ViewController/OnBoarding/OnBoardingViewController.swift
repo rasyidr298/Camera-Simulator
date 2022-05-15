@@ -20,12 +20,16 @@ class OnBoardingViewController: UIViewController {
     
     @IBAction func nextButton(_ sender: Any) {
         onBoardingPageViewController?.turnPage(index: pageControl.currentPage + 1, type: 1)
+        
+        if nextButton.titleLabel?.text == "skip" {
+            dismiss(animated: true)
+            UserDefaults.standard.set(true, forKey: showOnBoard)
+        }
     }
     
     @IBAction func previousButton(_ sender: Any) {
         onBoardingPageViewController?.turnPage(index: pageControl.currentPage - 1, type: 2)
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let onBoardingViewController = segue.destination as? OnboardingPageViewController {

@@ -19,6 +19,17 @@ class CameraViewController: UIViewController {
         imgCamera.image = listImage[indexImage]
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let showOnboarding = UserDefaults.standard.bool(forKey: showOnBoard)
+        if !showOnboarding {
+            let onBoardingVC = UIStoryboard(name: storyBoardName, bundle: nil).instantiateViewController(withIdentifier: onBoardVCId) as! OnBoardingViewController
+            
+            onBoardingVC.modalPresentationStyle = .overCurrentContext
+            present(onBoardingVC, animated: true)
+        }
+    }
+    
     @IBAction func btnNext(_ sender: Any) {
         if indexImage == listImage.count-1 {
             indexImage = 0
@@ -26,15 +37,17 @@ class CameraViewController: UIViewController {
             indexImage += 1
         }
         
+        self.imgCamera.image = self.listImage[self.indexImage]
+        
         //animate right
-        UIView.animate(
-            withDuration: 0.5,
-            delay: 0.0,
-            options:.transitionFlipFromRight,
-            animations: {
-                self.imgCamera.image = self.listImage[self.indexImage]
-                self.imgCamera?.frame.origin.x = 600
-        })
+//        UIView.animate(
+//            withDuration: 0.5,
+//            delay: 0.0,
+//            options:.transitionFlipFromRight,
+//            animations: {
+//                self.imgCamera.image = self.listImage[self.indexImage]
+//                self.imgCamera?.frame.origin.x = 600
+//        })
     }
     
     @IBAction func btnPrevious(_ sender: Any) {
@@ -44,15 +57,21 @@ class CameraViewController: UIViewController {
             indexImage -= 1
         }
         
+        self.imgCamera.image = self.listImage[self.indexImage]
+        
         //animate left
-        UIView.animate(
-            withDuration: 0.5,
-            delay: 0.0,
-            options:.transitionFlipFromLeft,
-            animations: {
-                self.imgCamera.image = self.listImage[self.indexImage]
-                self.imgCamera?.frame.origin.x = -600
-        })
+//        UIView.animate(
+//            withDuration: 0.5,
+//            delay: 0.0,
+//            options:.transitionFlipFromLeft,
+//            animations: {
+//                self.imgCamera?.frame.origin.x = -600
+//        })
+    }
+    
+    @IBAction func btnLearning(_ sender: Any) {
+            let destinationVC = UIStoryboard(name: storyBoardName, bundle: nil).instantiateViewController(withIdentifier: learningVcId) as! LearningViewController
+            navigationController?.pushViewController(destinationVC, animated: true)
     }
     
 }

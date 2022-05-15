@@ -23,8 +23,8 @@ class LearningViewController: UITableViewController {
 extension LearningViewController {
     
     func setupTable() {
-        let nib = UINib(nibName: "LearningTableViewCell", bundle: nil)
-        learningTableView.register(nib, forCellReuseIdentifier: "learningCell")
+        let nib = UINib(nibName: learningCellId, bundle: nil)
+        learningTableView.register(nib, forCellReuseIdentifier: learningCellId)
         
         listLearning.append(contentsOf: Learning.dataLearning())
     }
@@ -38,7 +38,7 @@ extension LearningViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let learningListData = listLearning[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "learningCell") as! LearningTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: learningCellId) as! LearningTableViewCell
         
         cell.learning = learningListData
         cell.updateCell()
@@ -47,7 +47,7 @@ extension LearningViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "learningDetail") as! DetailViewController
+        let destinationVC = UIStoryboard(name: storyBoardName, bundle: nil).instantiateViewController(withIdentifier: detailVCId) as! DetailViewController
         destinationVC.learning = listLearning[indexPath.row]
         
         navigationController?.pushViewController(destinationVC, animated: true)
