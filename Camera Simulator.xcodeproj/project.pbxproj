@@ -10,6 +10,11 @@
 		0112BB40282B85D600BEFA91 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BB3F282B85D600BEFA91 /* CameraViewController.swift */; };
 		0112BB42282B85FA00BEFA91 /* LearningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BB41282B85FA00BEFA91 /* LearningViewController.swift */; };
 		0112BB44282CDCD900BEFA91 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BB43282CDCD900BEFA91 /* OnBoardingViewController.swift */; };
+		0112BB49282DAE7D00BEFA91 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BB48282DAE7D00BEFA91 /* OnboardingPageViewController.swift */; };
+		0112BB4B282DAE9A00BEFA91 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112BB4A282DAE9A00BEFA91 /* OnboardingContentViewController.swift */; };
+		0116A6A9283099CB000B7652 /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116A6A8283099CB000B7652 /* Learning.swift */; };
+		0116A6AE28309BCB000B7652 /* LearningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116A6AC28309BCB000B7652 /* LearningTableViewCell.swift */; };
+		0116A6AF28309BCB000B7652 /* LearningTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0116A6AD28309BCB000B7652 /* LearningTableViewCell.xib */; };
 		017EBFD3282AA8E30043476F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBFD2282AA8E30043476F /* AppDelegate.swift */; };
 		017EBFD5282AA8E30043476F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBFD4282AA8E30043476F /* SceneDelegate.swift */; };
 		017EBFDA282AA8E30043476F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFD8282AA8E30043476F /* Main.storyboard */; };
@@ -21,6 +26,11 @@
 		0112BB3F282B85D600BEFA91 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		0112BB41282B85FA00BEFA91 /* LearningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewController.swift; sourceTree = "<group>"; };
 		0112BB43282CDCD900BEFA91 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		0112BB48282DAE7D00BEFA91 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		0112BB4A282DAE9A00BEFA91 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
+		0116A6A8283099CB000B7652 /* Learning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning.swift; sourceTree = "<group>"; };
+		0116A6AC28309BCB000B7652 /* LearningTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningTableViewCell.swift; sourceTree = "<group>"; };
+		0116A6AD28309BCB000B7652 /* LearningTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearningTableViewCell.xib; sourceTree = "<group>"; };
 		017EBFCF282AA8E30043476F /* Camera Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camera Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		017EBFD2282AA8E30043476F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		017EBFD4282AA8E30043476F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				0112BB3F282B85D600BEFA91 /* CameraViewController.swift */,
-				0112BB43282CDCD900BEFA91 /* OnBoardingViewController.swift */,
+				0112BB47282DAE3B00BEFA91 /* OnBoarding */,
 				0112BB41282B85FA00BEFA91 /* LearningViewController.swift */,
 			);
 			path = ViewController;
@@ -69,6 +79,33 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		0112BB47282DAE3B00BEFA91 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				0112BB43282CDCD900BEFA91 /* OnBoardingViewController.swift */,
+				0112BB48282DAE7D00BEFA91 /* OnboardingPageViewController.swift */,
+				0112BB4A282DAE9A00BEFA91 /* OnboardingContentViewController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		0116A6A728309992000B7652 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0116A6A8283099CB000B7652 /* Learning.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0116A6AA28309B34000B7652 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0116A6AC28309BCB000B7652 /* LearningTableViewCell.swift */,
+				0116A6AD28309BCB000B7652 /* LearningTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		017EBFC6282AA8E30043476F = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +125,8 @@
 		017EBFD1282AA8E30043476F /* Camera Simulator */ = {
 			isa = PBXGroup;
 			children = (
+				0116A6AA28309B34000B7652 /* Cell */,
+				0116A6A728309992000B7652 /* Model */,
 				0112BB46282CFDD200BEFA91 /* App */,
 				0112BB45282CFDBA00BEFA91 /* SuportingFiles */,
 				0112BB3C282B855900BEFA91 /* ViewController */,
@@ -156,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				017EBFDF282AA8E50043476F /* LaunchScreen.storyboard in Resources */,
+				0116A6AF28309BCB000B7652 /* LearningTableViewCell.xib in Resources */,
 				017EBFDC282AA8E50043476F /* Assets.xcassets in Resources */,
 				017EBFDA282AA8E30043476F /* Main.storyboard in Resources */,
 			);
@@ -168,10 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0116A6AE28309BCB000B7652 /* LearningTableViewCell.swift in Sources */,
 				0112BB40282B85D600BEFA91 /* CameraViewController.swift in Sources */,
+				0116A6A9283099CB000B7652 /* Learning.swift in Sources */,
 				0112BB42282B85FA00BEFA91 /* LearningViewController.swift in Sources */,
+				0112BB4B282DAE9A00BEFA91 /* OnboardingContentViewController.swift in Sources */,
 				017EBFD3282AA8E30043476F /* AppDelegate.swift in Sources */,
 				017EBFD5282AA8E30043476F /* SceneDelegate.swift in Sources */,
+				0112BB49282DAE7D00BEFA91 /* OnboardingPageViewController.swift in Sources */,
 				0112BB44282CDCD900BEFA91 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
