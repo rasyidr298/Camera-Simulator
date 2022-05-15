@@ -15,6 +15,7 @@
 		0116A6A9283099CB000B7652 /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116A6A8283099CB000B7652 /* Learning.swift */; };
 		0116A6AE28309BCB000B7652 /* LearningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116A6AC28309BCB000B7652 /* LearningTableViewCell.swift */; };
 		0116A6AF28309BCB000B7652 /* LearningTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0116A6AD28309BCB000B7652 /* LearningTableViewCell.xib */; };
+		0116A6B12830CE81000B7652 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116A6B02830CE81000B7652 /* DetailViewController.swift */; };
 		017EBFD3282AA8E30043476F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBFD2282AA8E30043476F /* AppDelegate.swift */; };
 		017EBFD5282AA8E30043476F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBFD4282AA8E30043476F /* SceneDelegate.swift */; };
 		017EBFDA282AA8E30043476F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFD8282AA8E30043476F /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		0116A6A8283099CB000B7652 /* Learning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning.swift; sourceTree = "<group>"; };
 		0116A6AC28309BCB000B7652 /* LearningTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningTableViewCell.swift; sourceTree = "<group>"; };
 		0116A6AD28309BCB000B7652 /* LearningTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearningTableViewCell.xib; sourceTree = "<group>"; };
+		0116A6B02830CE81000B7652 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		017EBFCF282AA8E30043476F /* Camera Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camera Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		017EBFD2282AA8E30043476F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		017EBFD4282AA8E30043476F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				0112BB3F282B85D600BEFA91 /* CameraViewController.swift */,
 				0112BB47282DAE3B00BEFA91 /* OnBoarding */,
 				0112BB41282B85FA00BEFA91 /* LearningViewController.swift */,
+				0116A6B02830CE81000B7652 /* DetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				0112BB4B282DAE9A00BEFA91 /* OnboardingContentViewController.swift in Sources */,
 				017EBFD3282AA8E30043476F /* AppDelegate.swift in Sources */,
 				017EBFD5282AA8E30043476F /* SceneDelegate.swift in Sources */,
+				0116A6B12830CE81000B7652 /* DetailViewController.swift in Sources */,
 				0112BB49282DAE7D00BEFA91 /* OnboardingPageViewController.swift in Sources */,
 				0112BB44282CDCD900BEFA91 /* OnBoardingViewController.swift in Sources */,
 			);

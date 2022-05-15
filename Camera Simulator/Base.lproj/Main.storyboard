@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jhc-mu-7US">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -179,29 +179,56 @@
             <point key="canvasLocation" x="-1803" y="66"/>
         </scene>
         <!--Learning View Controller-->
-        <scene sceneID="rw9-ZT-mft">
+        <scene sceneID="reM-7B-jer">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D3a-Nq-Iz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="pVf-dd-Tc2" customClass="LearningViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k8g-lm-xAB">
+                <tableViewController id="qZj-xB-Z1T" customClass="LearningViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="FuQ-Cr-Ima">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="o05-I8-mjH">
-                                <rect key="frame" x="0.0" y="83" width="414" height="813"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="fu4-i5-kWW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="QIp-sX-6um"/>
+                    <connections>
+                        <outlet property="learningTableView" destination="FuQ-Cr-Ima" id="93c-u4-aF8"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctN-x5-OiY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="65.625"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Thz-CF-UR6">
+            <objects>
+                <viewController storyboardIdentifier="learningDetail" id="5cj-kH-rF2" customClass="DetailViewController" customModule="Camera_Simulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWY-EX-GQB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0b5-EK-62h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="learningTableView" destination="o05-I8-mjH" id="d1Z-Xc-hVm"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="euy-hf-Jgd"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sga-bJ-5Ox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-997.10144927536237" y="65.625"/>
+            <point key="canvasLocation" x="868.11594202898561" y="65.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sYC-Mm-Bcu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CsC-Bp-9tK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z1w-ou-Kz7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qZj-xB-Z1T" kind="relationship" relationship="rootViewController" id="EmX-gB-gmm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6f-Vu-hj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823.1884057971015" y="65.625"/>
         </scene>
     </scenes>
     <resources>
