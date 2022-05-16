@@ -16,10 +16,12 @@ class CameraViewController: UIViewController {
     private var listObjectImage = [UIImage(named: "bg_test2"), UIImage(named: "bg_test1")]
     private var indexImage = 0
     var transition = CATransition()
+    var context = CIContext(options: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         animateImageView(type: "next")
+        blurEffect(uiImage: backgroundImage, value: 5)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,7 +39,6 @@ class CameraViewController: UIViewController {
 extension CameraViewController {
     
     func animateImageView(type: String) {
-        
         switch type {
             case "next" :
                 transition.type = CATransitionType.push
@@ -59,6 +60,22 @@ extension CameraViewController {
         }
         CATransaction.commit()
         indexImage = indexImage < listBackgroundImage.count - 1 ? indexImage + 1 : 0
+    }
+
+    func blurEffect(uiImage: UIImageView, value: Int) {
+        let currentFilter = CIFilter(name: "CIGaussianBlur")
+        let beginImage = CIImage(image: uiImage.image!)
+        currentFilter!.setValue(beginImage, forKey: kCIInputImageKey)
+        currentFilter!.setValue(value, forKey: kCIInputRadiusKey)
+
+        let cropFilter = CIFilter(name: "CICrop")
+        cropFilter!.setValue(currentFilter!.outputImage, forKey: kCIInputImageKey)
+        cropFilter!.setValue(CIVector(cgRect: beginImage!.extent), forKey: "inputRectangle")
+
+        let output = cropFilter!.outputImage
+        let cgimg = context.createCGImage(output!, from: output!.extent)
+        let processedImage = UIImage(cgImage: cgimg!)
+        uiImage.image = processedImage
     }
 }
 

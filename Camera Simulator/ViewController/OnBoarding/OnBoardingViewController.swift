@@ -18,6 +18,16 @@ class OnBoardingViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let onBoardingViewController = segue.destination as? OnboardingPageViewController {
+            onBoardingViewController.pageViewControllerDelegate = self
+            onBoardingPageViewController = onBoardingViewController
+        }
+    }
+}
+
+extension OnBoardingViewController {
+    
     @IBAction func nextButton(_ sender: Any) {
         onBoardingPageViewController?.turnPage(index: pageControl.currentPage + 1, type: 1)
         
@@ -29,13 +39,6 @@ class OnBoardingViewController: UIViewController {
     
     @IBAction func previousButton(_ sender: Any) {
         onBoardingPageViewController?.turnPage(index: pageControl.currentPage - 1, type: 2)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let onBoardingViewController = segue.destination as? OnboardingPageViewController {
-            onBoardingViewController.pageViewControllerDelegate = self
-            onBoardingPageViewController = onBoardingViewController
-        }
     }
 }
 
