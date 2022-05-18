@@ -172,20 +172,52 @@
                                     <constraint firstAttribute="height" constant="128" id="WQc-n1-3QV"/>
                                 </constraints>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6s5-wA-5Qa">
+                                <rect key="frame" x="18" y="591" width="378" height="31"/>
+                                <connections>
+                                    <action selector="afSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ibb-qe-hKs"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CQ7-uh-KkS">
+                                <rect key="frame" x="18" y="649" width="378" height="31"/>
+                                <connections>
+                                    <action selector="isoSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="fX0-jP-DMd"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b3r-UY-1W5">
+                                <rect key="frame" x="18" y="708" width="378" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="awI-IQ-1ro">
+                                <rect key="frame" x="18" y="770" width="378" height="31"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6s5-wA-5Qa" secondAttribute="trailing" constant="20" id="1FR-dw-at7"/>
+                            <constraint firstItem="Wx4-4b-oaz" firstAttribute="top" secondItem="awI-IQ-1ro" secondAttribute="bottom" constant="29" id="B6p-ak-85u"/>
+                            <constraint firstItem="b3r-UY-1W5" firstAttribute="top" secondItem="CQ7-uh-KkS" secondAttribute="bottom" constant="29" id="ES0-mm-NVC"/>
                             <constraint firstItem="Wx4-4b-oaz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EvU-Za-XnU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CQ7-uh-KkS" secondAttribute="trailing" constant="20" id="Jdd-P1-xTI"/>
+                            <constraint firstItem="CQ7-uh-KkS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="New-LJ-nDa"/>
+                            <constraint firstItem="awI-IQ-1ro" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Oju-8L-dXg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lhR-4z-fZV" secondAttribute="trailing" constant="70" id="YX3-vj-Wv8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b3r-UY-1W5" secondAttribute="trailing" constant="20" id="ZGt-SI-ngg"/>
                             <constraint firstItem="Wx4-4b-oaz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gMM-lv-qU7"/>
+                            <constraint firstItem="CQ7-uh-KkS" firstAttribute="top" secondItem="6s5-wA-5Qa" secondAttribute="bottom" constant="28" id="jMq-54-oiL"/>
+                            <constraint firstItem="b3r-UY-1W5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jrX-lj-OVc"/>
                             <constraint firstAttribute="bottom" secondItem="Wx4-4b-oaz" secondAttribute="bottom" id="ktC-CK-M90"/>
+                            <constraint firstItem="awI-IQ-1ro" firstAttribute="top" secondItem="b3r-UY-1W5" secondAttribute="bottom" constant="32" id="oaA-M0-Akm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="awI-IQ-1ro" secondAttribute="trailing" constant="20" id="rRq-jd-VTN"/>
+                            <constraint firstItem="6s5-wA-5Qa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sxc-xp-i2J"/>
                             <constraint firstItem="lhR-4z-fZV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="169" id="wSy-Ey-7Ob"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uqA-OI-oSV"/>
                     <connections>
+                        <outlet property="afSlider" destination="6s5-wA-5Qa" id="ETk-jf-4rZ"/>
                         <outlet property="backgroundImage" destination="TZD-zy-EkZ" id="ICW-mE-4jF"/>
+                        <outlet property="isoSlider" destination="CQ7-uh-KkS" id="PFF-Cb-tHH"/>
                         <outlet property="objectImage" destination="lhR-4z-fZV" id="C6H-EB-3xL"/>
                     </connections>
                 </viewController>
