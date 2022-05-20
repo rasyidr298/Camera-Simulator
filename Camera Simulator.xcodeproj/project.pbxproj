@@ -21,6 +21,10 @@
 		017EBFDA282AA8E30043476F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFD8282AA8E30043476F /* Main.storyboard */; };
 		017EBFDC282AA8E50043476F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFDB282AA8E50043476F /* Assets.xcassets */; };
 		017EBFDF282AA8E50043476F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017EBFDD282AA8E50043476F /* LaunchScreen.storyboard */; };
+		01829A2C2837316900174D33 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01829A2B2837316900174D33 /* Extension.swift */; };
+		01A83A182834D9F300C6D10B /* ManualCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A83A172834D9F300C6D10B /* ManualCamera.swift */; };
+		01A83A1A2834DA2800C6D10B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A83A192834DA2800C6D10B /* Camera.swift */; };
+		01A83A1C2834DA4F00C6D10B /* CameraConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A83A1B2834DA4F00C6D10B /* CameraConstans.swift */; };
 		01E9FC1F28310AC40086BECD /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9FC1E28310AC40086BECD /* Constans.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		017EBFDB282AA8E50043476F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		017EBFDE282AA8E50043476F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		017EBFE0282AA8E50043476F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01829A2B2837316900174D33 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		01A83A172834D9F300C6D10B /* ManualCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualCamera.swift; sourceTree = "<group>"; };
+		01A83A192834DA2800C6D10B /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		01A83A1B2834DA4F00C6D10B /* CameraConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConstans.swift; sourceTree = "<group>"; };
 		01E9FC1E28310AC40086BECD /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,10 +150,22 @@
 			path = "Camera Simulator";
 			sourceTree = "<group>";
 		};
+		01829A2128367F3A00174D33 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				01A83A172834D9F300C6D10B /* ManualCamera.swift */,
+				01A83A192834DA2800C6D10B /* Camera.swift */,
+				01A83A1B2834DA4F00C6D10B /* CameraConstans.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		01E9FC1D28310A840086BECD /* Constans */ = {
 			isa = PBXGroup;
 			children = (
+				01829A2128367F3A00174D33 /* Camera */,
 				01E9FC1E28310AC40086BECD /* Constans.swift */,
+				01829A2B2837316900174D33 /* Extension.swift */,
 			);
 			path = Constans;
 			sourceTree = "<group>";
@@ -166,6 +186,8 @@
 			dependencies = (
 			);
 			name = "Camera Simulator";
+			packageProductDependencies = (
+			);
 			productName = "Camera Simulator";
 			productReference = 017EBFCF282AA8E30043476F /* Camera Simulator.app */;
 			productType = "com.apple.product-type.application";
@@ -194,6 +216,8 @@
 				Base,
 			);
 			mainGroup = 017EBFC6282AA8E30043476F;
+			packageReferences = (
+			);
 			productRefGroup = 017EBFD0282AA8E30043476F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,10 +251,14 @@
 				0116A6A9283099CB000B7652 /* Learning.swift in Sources */,
 				0112BB42282B85FA00BEFA91 /* LearningViewController.swift in Sources */,
 				0112BB4B282DAE9A00BEFA91 /* OnboardingContentViewController.swift in Sources */,
+				01A83A1C2834DA4F00C6D10B /* CameraConstans.swift in Sources */,
 				01E9FC1F28310AC40086BECD /* Constans.swift in Sources */,
 				017EBFD3282AA8E30043476F /* AppDelegate.swift in Sources */,
 				017EBFD5282AA8E30043476F /* SceneDelegate.swift in Sources */,
+				01A83A182834D9F300C6D10B /* ManualCamera.swift in Sources */,
 				0116A6B12830CE81000B7652 /* DetailViewController.swift in Sources */,
+				01829A2C2837316900174D33 /* Extension.swift in Sources */,
+				01A83A1A2834DA2800C6D10B /* Camera.swift in Sources */,
 				0112BB49282DAE7D00BEFA91 /* OnboardingPageViewController.swift in Sources */,
 				0112BB44282CDCD900BEFA91 /* OnBoardingViewController.swift in Sources */,
 			);
@@ -382,6 +410,9 @@
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "$(PRODUCT_NAME) allows you to choose photos to filter.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) allows you to save modified photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -392,7 +423,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "rrdev.Camera-Simulator";
+				PRODUCT_BUNDLE_IDENTIFIER = "rrde.Camera-Simulator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -410,6 +441,9 @@
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "$(PRODUCT_NAME) allows you to choose photos to filter.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) allows you to save modified photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -420,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "rrdev.Camera-Simulator";
+				PRODUCT_BUNDLE_IDENTIFIER = "rrde.Camera-Simulator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
