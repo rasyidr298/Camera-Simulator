@@ -17,8 +17,8 @@ class OnboardingPageViewController: UIPageViewController {
     weak var pageViewControllerDelegate: onboardingPageViewControllerDelegate?
     
     var pageTitle = ["Learn Exposure Triangle", "Adjust The Settings", "Simulate Your Settings"]
-    var pageDescriptionText = ["desc1",  "desc2", "desc3"]
-    var pageImage: [UIImage] = [UIImage(named: "bg_test1")!, UIImage(named: "bg_test2")!, UIImage(named: "bg_test1")!]
+    var pageDescriptionText = ["Provide solutions for you to learn exposure",  "You can adjust the exposure triangle settings easily", "You can simulate the exposure triangle settings at the same time"]
+    var pageImage: [UIImage] = [UIImage(named: "Triangle 2")!, UIImage(named: "Setting")!, UIImage(named: "Simulate")!]
     var backgroundColor: [UIColor] = [.green, .red, .yellow]
     
     var currentIndex = 0

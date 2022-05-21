@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="278px" height="233px" viewBox="0 0 278 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group1</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding-Screen" transform="translate(-54.000000, -245.000000)">
+            <g id="Group1" transform="translate(54.000000, 245.155000)">
+                <polyline id="Fill-41" fill="#AFBBC8" transform="translate(88.750644, 116.612791) rotate(180.000000) translate(-88.750644, -116.612791) " points="160.759996 10.109867 36.8230994 223.115715 16.7412913 188.601608 120.595916 10.109867 160.759996 10.109867"></polyline>
+                <polyline id="Fill-40" fill="#252324" transform="translate(135.561933, 205.859122) rotate(180.000000) translate(-135.561933, -205.859122) " points="16.6939207 188.602529 254.429945 188.602529 235.169184 223.115715 35.9540137 223.115715 16.6939207 188.602529"></polyline>
+                <polyline id="Fill-42" fill="#91C0EE" transform="translate(192.605152, 116.612791) rotate(180.000000) translate(-192.605152, -116.612791) " points="160.758604 10.109867 264.614389 188.601608 244.532117 223.115715 120.595916 10.109867 160.758604 10.109867"></polyline>
+                <polygon id="Fill-43" fill="#AFBBC8" transform="translate(42.627793, 195.368421) rotate(180.000000) translate(-42.627793, -195.368421) " points="42.6267137 232 0 158.736842 85.2555859 158.736842"></polygon>
+                <polyline id="Fill-47" fill="#A5AFBA" transform="translate(63.942229, 195.368314) rotate(180.000000) translate(-63.942229, -195.368314) " points="85.2555859 158.736842 42.6288722 158.736842 85.2555859 231.999786 85.2555859 158.736842"></polyline>
+                <polygon id="Fill-43" fill="#91C0EE" transform="translate(141.001320, 36.631579) rotate(180.000000) translate(-141.001320, -36.631579) " points="141.000241 73.2631579 98.3735272 0 183.629113 0"></polygon>
+                <polyline id="Fill-47" fill="#7AA7D3" transform="translate(162.315756, 36.631472) rotate(180.000000) translate(-162.315756, -36.631472) " points="183.629113 0 141.002399 0 183.629113 73.2629437 183.629113 0"></polyline>
+                <polygon id="Fill-43" fill="#AFBBC8" transform="translate(42.627793, 195.368421) rotate(180.000000) translate(-42.627793, -195.368421) " points="42.6267137 232 0 158.736842 85.2555859 158.736842"></polygon>
+                <polyline id="Fill-47" fill="#A5AFBA" transform="translate(63.942229, 195.368314) rotate(180.000000) translate(-63.942229, -195.368314) " points="85.2555859 158.736842 42.6288722 158.736842 85.2555859 231.999786 85.2555859 158.736842"></polyline>
+                <polygon id="Fill-43" fill="#91C0EE" transform="translate(141.001320, 36.631579) rotate(180.000000) translate(-141.001320, -36.631579) " points="141.000241 73.2631579 98.3735272 0 183.629113 0"></polygon>
+                <polyline id="Fill-47" fill="#8DB5DC" transform="translate(162.315756, 36.631472) rotate(180.000000) translate(-162.315756, -36.631472) " points="183.629113 0 141.002399 0 183.629113 73.2629437 183.629113 0"></polyline>
+                <polygon id="Fill-43" fill="#252324" transform="translate(235.275950, 195.368421) rotate(180.000000) translate(-235.275950, -195.368421) " points="235.274871 232 192.648157 158.736842 277.903743 158.736842"></polygon>
+                <polyline id="Fill-47" fill="#48484A" transform="translate(256.590386, 195.368314) rotate(180.000000) translate(-256.590386, -195.368314) " points="277.903743 158.736842 235.27703 158.736842 277.903743 231.999786 277.903743 158.736842"></polyline>
+                <text id="ISO" transform="translate(187.565608, 127.090245) rotate(58.000000) translate(-187.565608, -127.090245) " font-family="SFPro-Bold, SF Pro" font-size="14" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="175.332698" y="131.417347">ISO</tspan>
+                </text>
+                <text id="Aperture" transform="translate(89.793990, 131.344477) rotate(-59.000000) translate(-89.793990, -131.344477) " font-family="SFPro-Bold, SF Pro" font-size="12" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="62.7895952" y="134.755692">Aperture</tspan>
+                </text>
+                <text id="Shutter-Speed" font-family="SFPro-Bold, SF Pro" font-size="12" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="93.5572483" y="208.069975">Shutter Speed</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

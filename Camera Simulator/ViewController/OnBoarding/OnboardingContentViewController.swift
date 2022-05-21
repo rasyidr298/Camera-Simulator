@@ -38,5 +38,6 @@ class OnboardingContentViewController: UIViewController {
         
         contentLabel.attributedText = atributedText
         contentLabel.textAlignment = .center
+        
     }
 }

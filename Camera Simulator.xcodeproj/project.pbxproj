@@ -26,6 +26,12 @@
 		01A83A1A2834DA2800C6D10B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A83A192834DA2800C6D10B /* Camera.swift */; };
 		01A83A1C2834DA4F00C6D10B /* CameraConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A83A1B2834DA4F00C6D10B /* CameraConstans.swift */; };
 		01E9FC1F28310AC40086BECD /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9FC1E28310AC40086BECD /* Constans.swift */; };
+		2482730128341EEC00C78EB6 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2482730028341EEC00C78EB6 /* Gif.swift */; };
+		248273042834249D00C78EB6 /* anim_Aperture.gif in Resources */ = {isa = PBXBuildFile; fileRef = 248273022834249C00C78EB6 /* anim_Aperture.gif */; };
+		248273052834249D00C78EB6 /* anim_ISO.gif in Resources */ = {isa = PBXBuildFile; fileRef = 248273032834249D00C78EB6 /* anim_ISO.gif */; };
+		2482730A2834297900C78EB6 /* Anim_ShutterSpeed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 248273092834297900C78EB6 /* Anim_ShutterSpeed.gif */; };
+		24DA9AA328374179005ED8FA /* anim_EV.gif in Resources */ = {isa = PBXBuildFile; fileRef = 24DA9AA228374179005ED8FA /* anim_EV.gif */; };
+		24DA9AA728374452005ED8FA /* anim_ExTri.gif in Resources */ = {isa = PBXBuildFile; fileRef = 24DA9AA628374452005ED8FA /* anim_ExTri.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		01A83A192834DA2800C6D10B /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		01A83A1B2834DA4F00C6D10B /* CameraConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConstans.swift; sourceTree = "<group>"; };
 		01E9FC1E28310AC40086BECD /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		2482730028341EEC00C78EB6 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		248273022834249C00C78EB6 /* anim_Aperture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anim_Aperture.gif; sourceTree = "<group>"; };
+		248273032834249D00C78EB6 /* anim_ISO.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anim_ISO.gif; sourceTree = "<group>"; };
+		248273092834297900C78EB6 /* Anim_ShutterSpeed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Anim_ShutterSpeed.gif; sourceTree = "<group>"; };
+		24DA9AA228374179005ED8FA /* anim_EV.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anim_EV.gif; sourceTree = "<group>"; };
+		24DA9AA628374452005ED8FA /* anim_ExTri.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anim_ExTri.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,8 @@
 		0112BB45282CFDBA00BEFA91 /* SuportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				24827306283424E300C78EB6 /* anim */,
+				24DA9AA628374452005ED8FA /* anim_ExTri.gif */,
 				017EBFDB282AA8E50043476F /* Assets.xcassets */,
 				017EBFE0282AA8E50043476F /* Info.plist */,
 			);
@@ -139,6 +153,7 @@
 		017EBFD1282AA8E30043476F /* Camera Simulator */ = {
 			isa = PBXGroup;
 			children = (
+				248272FF28341EBE00C78EB6 /* Extension */,
 				01E9FC1D28310A840086BECD /* Constans */,
 				0116A6A728309992000B7652 /* Model */,
 				0112BB46282CFDD200BEFA91 /* App */,
@@ -168,6 +183,25 @@
 				01829A2B2837316900174D33 /* Extension.swift */,
 			);
 			path = Constans;
+			sourceTree = "<group>";
+		};
+		248272FF28341EBE00C78EB6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2482730028341EEC00C78EB6 /* Gif.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		24827306283424E300C78EB6 /* anim */ = {
+			isa = PBXGroup;
+			children = (
+				248273022834249C00C78EB6 /* anim_Aperture.gif */,
+				24DA9AA228374179005ED8FA /* anim_EV.gif */,
+				248273032834249D00C78EB6 /* anim_ISO.gif */,
+				248273092834297900C78EB6 /* Anim_ShutterSpeed.gif */,
+			);
+			path = anim;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +267,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				017EBFDF282AA8E50043476F /* LaunchScreen.storyboard in Resources */,
+				24DA9AA328374179005ED8FA /* anim_EV.gif in Resources */,
+				24DA9AA728374452005ED8FA /* anim_ExTri.gif in Resources */,
+				2482730A2834297900C78EB6 /* Anim_ShutterSpeed.gif in Resources */,
+				248273052834249D00C78EB6 /* anim_ISO.gif in Resources */,
 				0116A6AF28309BCB000B7652 /* LearningTableViewCell.xib in Resources */,
 				017EBFDC282AA8E50043476F /* Assets.xcassets in Resources */,
+				248273042834249D00C78EB6 /* anim_Aperture.gif in Resources */,
 				017EBFDA282AA8E30043476F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +287,7 @@
 			files = (
 				0116A6AE28309BCB000B7652 /* LearningTableViewCell.swift in Sources */,
 				0112BB40282B85D600BEFA91 /* CameraViewController.swift in Sources */,
+				2482730128341EEC00C78EB6 /* Gif.swift in Sources */,
 				0116A6A9283099CB000B7652 /* Learning.swift in Sources */,
 				0112BB42282B85FA00BEFA91 /* LearningViewController.swift in Sources */,
 				0112BB4B282DAE9A00BEFA91 /* OnboardingContentViewController.swift in Sources */,
@@ -407,7 +447,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DA8L68M7F2;
+				DEVELOPMENT_TEAM = 6R9NL6954G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -438,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DA8L68M7F2;
+				DEVELOPMENT_TEAM = 6R9NL6954G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
