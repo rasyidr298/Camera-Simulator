@@ -235,7 +235,7 @@ extension CameraViewController: UIGestureRecognizerDelegate {
         if focusLayer == nil {
             focusLayer = CAShapeLayer()
             focusLayer.frame = previewLayer.bounds
-            focusLayer.strokeColor = UIColor.orange.cgColor
+            focusLayer.strokeColor = UIColor(named: "blue")?.cgColor
             
             let rectPath = UIBezierPath()
             rectPath.lineWidth = 1.0
@@ -315,9 +315,9 @@ extension CameraViewController: UIGestureRecognizerDelegate {
         apertureButton.setImage(UIImage(named: isHiddenAperture ? "ic_aperture" : "ic_aperture_selected"), for: .normal)
         
         apertureSlider.isEnabled = camera.focusMode == .manual
-        apertureSlider.minimumTrackTintColor = apertureSlider.isEnabled ? UIColor.orange : UIColor.gray
-        apertureSlider.maximumTrackTintColor = apertureSlider.isEnabled ? UIColor.orange : UIColor.gray
-        apertureSlider.thumbTintColor = apertureSlider.isEnabled ? UIColor.orange : UIColor.gray
+        apertureSlider.minimumTrackTintColor = apertureSlider.isEnabled ? UIColor(named: "blue") : UIColor.gray
+        apertureSlider.maximumTrackTintColor = apertureSlider.isEnabled ? UIColor(named: "blue") : UIColor.gray
+        apertureSlider.thumbTintColor = apertureSlider.isEnabled ? UIColor(named: "blue") : UIColor.gray
         apertureSlider.value = camera.lensPosition()
     }
     

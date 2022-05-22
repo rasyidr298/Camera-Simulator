@@ -91,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				24827306283424E300C78EB6 /* anim */,
-				24DA9AA628374452005ED8FA /* anim_ExTri.gif */,
 				017EBFDB282AA8E50043476F /* Assets.xcassets */,
 				017EBFE0282AA8E50043476F /* Info.plist */,
 			);
@@ -153,7 +152,6 @@
 		017EBFD1282AA8E30043476F /* Camera Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				248272FF28341EBE00C78EB6 /* Extension */,
 				01E9FC1D28310A840086BECD /* Constans */,
 				0116A6A728309992000B7652 /* Model */,
 				0112BB46282CFDD200BEFA91 /* App */,
@@ -178,24 +176,18 @@
 		01E9FC1D28310A840086BECD /* Constans */ = {
 			isa = PBXGroup;
 			children = (
+				01829A2B2837316900174D33 /* Extension.swift */,
+				2482730028341EEC00C78EB6 /* Gif.swift */,
 				01829A2128367F3A00174D33 /* Camera */,
 				01E9FC1E28310AC40086BECD /* Constans.swift */,
-				01829A2B2837316900174D33 /* Extension.swift */,
 			);
 			path = Constans;
-			sourceTree = "<group>";
-		};
-		248272FF28341EBE00C78EB6 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				2482730028341EEC00C78EB6 /* Gif.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		24827306283424E300C78EB6 /* anim */ = {
 			isa = PBXGroup;
 			children = (
+				24DA9AA628374452005ED8FA /* anim_ExTri.gif */,
 				248273022834249C00C78EB6 /* anim_Aperture.gif */,
 				24DA9AA228374179005ED8FA /* anim_EV.gif */,
 				248273032834249D00C78EB6 /* anim_ISO.gif */,
@@ -447,7 +439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6R9NL6954G;
+				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -478,7 +470,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6R9NL6954G;
+				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";

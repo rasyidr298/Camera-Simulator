@@ -16,13 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_test1" translatesAutoresizingMaskIntoConstraints="NO" id="A3q-Gi-6wx">
-                                <rect key="frame" x="68" y="366" width="293" height="194"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFa-HS-jPW">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="A3q-Gi-6wx">
+                                        <rect key="frame" x="100" y="343" width="228" height="240"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="A3q-Gi-6wx" firstAttribute="centerX" secondItem="SFa-HS-jPW" secondAttribute="centerX" id="Ia7-Pc-buN"/>
+                                    <constraint firstItem="A3q-Gi-6wx" firstAttribute="centerY" secondItem="SFa-HS-jPW" secondAttribute="centerY" id="SD7-Ch-zJe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4lt-FV-xCo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SFa-HS-jPW" firstAttribute="leading" secondItem="4lt-FV-xCo" secondAttribute="leading" id="ObG-uM-B6K"/>
+                            <constraint firstItem="SFa-HS-jPW" firstAttribute="top" secondItem="bxn-c1-X1Y" secondAttribute="top" id="Tna-Lw-xKo"/>
+                            <constraint firstAttribute="bottom" secondItem="SFa-HS-jPW" secondAttribute="bottom" id="sWD-Ie-dIJ"/>
+                            <constraint firstItem="SFa-HS-jPW" firstAttribute="trailing" secondItem="4lt-FV-xCo" secondAttribute="trailing" id="tKZ-ET-I1V"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WcT-Cd-zqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -31,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_test1" width="1280" height="720"/>
+        <image name="ic_logo" width="228" height="240"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

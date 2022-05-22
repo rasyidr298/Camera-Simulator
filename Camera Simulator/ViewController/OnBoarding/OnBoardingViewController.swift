@@ -10,7 +10,8 @@ import UIKit
 class OnBoardingViewController: UIViewController {
     
     @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var skipButton: UIButton!
+    @IBOutlet weak var startButton: UIButton!
     
     weak var onBoardingPageViewController: OnboardingPageViewController?
     
@@ -28,18 +29,28 @@ class OnBoardingViewController: UIViewController {
 
 extension OnBoardingViewController {
     
-    @IBAction func nextButton(_ sender: Any) {
-        onBoardingPageViewController?.turnPage(index: pageControl.currentPage + 1, type: 1)
-        
-        if nextButton.titleLabel?.text == "skip" {
-            dismiss(animated: true)
-            UserDefaults.standard.set(true, forKey: showOnBoard)
-        }
+    @IBAction func skipButton(_ sender: Any) {
+        dismiss(animated: true)
+        UserDefaults.standard.set(true, forKey: showOnBoard)
     }
     
-    @IBAction func previousButton(_ sender: Any) {
-        onBoardingPageViewController?.turnPage(index: pageControl.currentPage - 1, type: 2)
+    @IBAction func startButton(_ sender: Any) {
+        dismiss(animated: true)
+        UserDefaults.standard.set(true, forKey: showOnBoard)
     }
+    
+//    @IBAction func nextButton(_ sender: Any) {
+//        onBoardingPageViewController?.turnPage(index: pageControl.currentPage + 1, type: 1)
+//
+//        if nextButton.titleLabel?.text == "skip" {
+//            dismiss(animated: true)
+//            UserDefaults.standard.set(true, forKey: showOnBoard)
+//        }
+//    }
+//
+//    @IBAction func previousButton(_ sender: Any) {
+//        onBoardingPageViewController?.turnPage(index: pageControl.currentPage - 1, type: 2)
+//    }
 }
 
 extension OnBoardingViewController: onboardingPageViewControllerDelegate {
@@ -49,6 +60,18 @@ extension OnBoardingViewController: onboardingPageViewControllerDelegate {
     
     func turnPageController(to index: Int) {
         pageControl.currentPage = index
-        nextButton.setTitle(index == 2 ? "skip" : "next", for: .normal)
+        
+        if index == 2 {
+            skipButton.isHidden = true
+        }else {
+            skipButton.isHidden = false
+        }
+        
+        if index == 2 {
+            startButton.isHidden = false
+        }else {
+            startButton.isHidden = true
+        }
+        
     }
 }

@@ -40,6 +40,7 @@ extension LearningViewController {
         let learningListData = listLearning[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: learningCellId) as! LearningTableViewCell
         
+        cell.selectionStyle = .none
         cell.learning = learningListData
         cell.updateCell()
         

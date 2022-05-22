@@ -10,11 +10,8 @@ import UIKit
 class OnboardingContentViewController: UIViewController {
 
     @IBOutlet weak var imgContent: UIImageView!
-    @IBOutlet weak var contentLabel: UILabel! {
-        didSet {
-            contentLabel.numberOfLines = 0
-        }
-    }
+    @IBOutlet weak var headingLabel: UILabel!
+    @IBOutlet weak var subHeadingLabel: UILabel!
     
     var index = 0
     var heading = ""
@@ -26,18 +23,9 @@ class OnboardingContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupTextLabel()
+        view.backgroundColor = bgColor
         imgContent.image = image
-//        view.backgroundColor = bgColor
-    }
-    
-    func setupTextLabel() {
-        let atributedText = NSMutableAttributedString(string: heading, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15), NSAttributedString.Key.foregroundColor: UIColor.white])
-        
-        atributedText.append(NSAttributedString(string: "\n\n\(subheading)", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white]))
-        
-        contentLabel.attributedText = atributedText
-        contentLabel.textAlignment = .center
-        
+        headingLabel.text = heading
+        subHeadingLabel.text = subheading
     }
 }
