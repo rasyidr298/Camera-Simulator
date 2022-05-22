@@ -442,9 +442,10 @@
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ET-Cam";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "$(PRODUCT_NAME) allows you to choose photos to filter.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) allows you to save modified photos to your photo library.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Camera Simulator allows you to choose photos to filter.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Camera Simulator allows you to save modified photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -473,9 +474,10 @@
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Camera Simulator/SuportingFiles/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ET-Cam";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "$(PRODUCT_NAME) allows you to choose photos to filter.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) allows you to save modified photos to your photo library.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Camera Simulator allows you to choose photos to filter.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Camera Simulator allows you to save modified photos to your photo library.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

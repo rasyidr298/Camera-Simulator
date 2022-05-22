@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="A3q-Gi-6wx">
-                                        <rect key="frame" x="100" y="343" width="228" height="240"/>
+                                        <rect key="frame" x="12.666666666666657" y="251.66666666666663" width="403" height="423"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_logo" width="228" height="240"/>
+        <image name="ic_logo" width="403" height="423"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
