@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0UZ-uI-RYG">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,30 +13,33 @@
             <objects>
                 <viewController id="0UZ-uI-RYG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bxn-c1-X1Y">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFa-HS-jPW">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="A3q-Gi-6wx">
-                                        <rect key="frame" x="12.666666666666657" y="251.66666666666663" width="403" height="423"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_triangle_onboard" translatesAutoresizingMaskIntoConstraints="NO" id="yy2-xY-VyZ">
+                                        <rect key="frame" x="68" y="282.5" width="278" height="331"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="yy2-xY-VyZ" secondAttribute="height" multiplier="246:293" id="lys-qs-lI3"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="A3q-Gi-6wx" firstAttribute="centerX" secondItem="SFa-HS-jPW" secondAttribute="centerX" id="Ia7-Pc-buN"/>
-                                    <constraint firstItem="A3q-Gi-6wx" firstAttribute="centerY" secondItem="SFa-HS-jPW" secondAttribute="centerY" id="SD7-Ch-zJe"/>
+                                    <constraint firstItem="yy2-xY-VyZ" firstAttribute="centerX" secondItem="SFa-HS-jPW" secondAttribute="centerX" id="5rB-44-Re9"/>
+                                    <constraint firstItem="yy2-xY-VyZ" firstAttribute="centerY" secondItem="SFa-HS-jPW" secondAttribute="centerY" id="VsO-cp-3oF"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4lt-FV-xCo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SFa-HS-jPW" firstAttribute="leading" secondItem="4lt-FV-xCo" secondAttribute="leading" id="ObG-uM-B6K"/>
-                            <constraint firstItem="SFa-HS-jPW" firstAttribute="top" secondItem="bxn-c1-X1Y" secondAttribute="top" id="Tna-Lw-xKo"/>
-                            <constraint firstAttribute="bottom" secondItem="SFa-HS-jPW" secondAttribute="bottom" id="sWD-Ie-dIJ"/>
-                            <constraint firstItem="SFa-HS-jPW" firstAttribute="trailing" secondItem="4lt-FV-xCo" secondAttribute="trailing" id="tKZ-ET-I1V"/>
+                            <constraint firstAttribute="bottom" secondItem="SFa-HS-jPW" secondAttribute="bottom" id="0Qn-qB-rRy"/>
+                            <constraint firstItem="SFa-HS-jPW" firstAttribute="top" secondItem="bxn-c1-X1Y" secondAttribute="top" id="959-wb-LH7"/>
+                            <constraint firstItem="SFa-HS-jPW" firstAttribute="leading" secondItem="4lt-FV-xCo" secondAttribute="leading" id="dpx-se-Dpi"/>
+                            <constraint firstAttribute="trailing" secondItem="SFa-HS-jPW" secondAttribute="trailing" id="gB6-W7-Gu4"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -46,7 +49,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_logo" width="403" height="423"/>
+        <image name="ic_triangle_onboard" width="278" height="233"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

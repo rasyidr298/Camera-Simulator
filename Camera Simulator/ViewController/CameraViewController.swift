@@ -81,7 +81,7 @@ extension CameraViewController {
         let showOnboarding = UserDefaults.standard.bool(forKey: showOnBoard)
         if !showOnboarding {
             let onBoardingVC = UIStoryboard(name: storyBoardName, bundle: nil).instantiateViewController(withIdentifier: onBoardVCId) as! OnBoardingViewController
-            
+
             onBoardingVC.modalPresentationStyle = .overCurrentContext
             present(onBoardingVC, animated: true)
         }
@@ -98,7 +98,12 @@ extension CameraViewController {
         super.viewWillDisappear(animated)
         if camera != nil {
             camera.stop()
+            previewView.removeFromSuperview()
         }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 }
 
@@ -115,6 +120,7 @@ extension CameraViewController: UIGestureRecognizerDelegate {
                     self.authorizePhotoLibraryUsage({ (success) in
                         if success {
                             self.authorized = true
+                            self.showPreview()
                         } else {
                             self.authorized = false
                             self.failAndExit(message: "Failed to authorize photo library usage.\nPlease quit application.")
@@ -126,11 +132,16 @@ extension CameraViewController: UIGestureRecognizerDelegate {
                 }
             }
         } else {
-            camera = ManualCamera()
-            camera.setDelegate(self)
-            setupSubViews()
-            setupPreviewLayer()
+            showPreview()
         }
+    }
+    
+    private func showPreview() {
+        self.camera = ManualCamera()
+        self.camera.setDelegate(self)
+        self.setupSubViews()
+        self.setupPreviewLayer()
+        self.camera.start()
     }
     
     private func setupSubViews() {
