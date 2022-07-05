@@ -34,8 +34,10 @@ class LearningTableViewCell: UITableViewCell {
         learningImg.layer.cornerRadius = learningImg.frame.size.width / 12
         learningImg.layer.borderColor = UIColor.darkGray.cgColor
         learningImg.layer.borderWidth = 2
+        
         titleLabel.text = learning?.learningTitle
         descLabel.text = learning?.learningDesc
+        
         fieldView.layer.cornerRadius = 12
     }
     
